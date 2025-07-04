@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Calculator = () => {
   const [input, setInput] = useState('0');
@@ -43,9 +43,9 @@ const Calculator = () => {
     }
   };
 
-  const toggleSign = () => {
-    setInput(input.charAt(0) === '-' ? input.substr(1) : '-' + input);
-  };
+  // const toggleSign = () => {
+  //   setInput(input.charAt(0) === '-' ? input.substr(1) : '-' + input);
+  // };
 
   const inputPercent = () => {
     const value = parseFloat(input);
